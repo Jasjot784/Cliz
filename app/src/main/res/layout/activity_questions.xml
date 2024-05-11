@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionsActivity">
+
+    <TextView
+        android:id="@+id/tvQues"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Question 1"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textSize="35sp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/etQues"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:hint="Enter Question"
+        app:layout_constraintTop_toBottomOf="@id/tvQues"
+        android:layout_margin="20dp"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/etA"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:hint="Enter Option A"
+        app:layout_constraintTop_toBottomOf="@id/etQues"
+        android:layout_marginTop="50dp"
+        android:layout_margin="20dp"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/etB"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:hint="Enter Option B"
+        app:layout_constraintTop_toBottomOf="@id/etA"
+        android:layout_margin="20dp"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/etC"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:hint="Enter Option C"
+        app:layout_constraintTop_toBottomOf="@id/etB"
+        android:layout_margin="20dp"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/etD"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:hint="Enter Option D"
+        app:layout_constraintTop_toBottomOf="@id/etC"
+        android:layout_margin="20dp"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/etCorrect"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:hint="Enter Correct Option(A,B,C,D)"
+        app:layout_constraintTop_toBottomOf="@id/etD"
+        android:layout_margin="20dp"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btNext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
